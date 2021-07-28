@@ -1,0 +1,16 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 82px;
+    top: 0;
+    background: #003262;
+}
+
+nav {
+    color: #FFFFFF;
+   
+}
