@@ -2,8 +2,9 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
 
 header {
@@ -25,6 +26,10 @@ header {
    
 } */
 
+/* .container {
+    max-width: 1200px;
+} */
+
 .test-nav {
     /* color: #FFFFFF; */
     /* font-size: 30px; */
@@ -32,12 +37,14 @@ header {
     width: 170px;
     /* height: 200px; */
     padding-top: 24px;
-    padding-right: 10px;
+    /* padding-right: 10px; */
     height: auto;
 }
 .zmdi-menu{
     color: white;
-    font-size: 900px;
+    /* font-size: 900px; */
+    padding-top: 24px;
+    /* padding-left: 85px; */
     /* width: 600px; */
     /* height: auto; */
     
