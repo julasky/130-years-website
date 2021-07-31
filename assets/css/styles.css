@@ -14,11 +14,11 @@ header {
     /* padding: 12px 16px; */
     background: #003262;
     display: block;
-
-   
-
 }
 
+h1 {
+    font-weight: 700;
+}
 /* nav {
     color: #FFFFFF;
     font-size: 30px;
@@ -48,4 +48,24 @@ header {
     /* width: 600px; */
     /* height: auto; */
     
+}
+
+
+
+.logo-on-banner {
+    position: absolute;
+    z-index: 2;
+    height: auto;
+    width: 42.2%;
+    display: block;
+    
+}
+
+.homepage-banner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: block;
+
 }
