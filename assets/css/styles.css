@@ -16,10 +16,20 @@ header {
     display: block;
 }
 
-h1 {
+h1, h2 {
     font-weight: 700;
     font-size: 28px;
 }
+
+
+
+
+/* @media screen and (min-width: 615px) {
+    .homepage-header-text {
+        background: #FDB515;
+    }
+} */
+
 /* nav {
     color: #FFFFFF;
     font-size: 30px;
@@ -52,7 +62,6 @@ h1 {
 }
 
 
-
 .logo-on-banner {
     position: absolute;
     z-index: 2;
@@ -74,13 +83,52 @@ h1 {
 .arcway-pic {
     width: 100%;
     height: auto;
-    display: block;
+    display: none;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 29px;
+     
 }
 
+@media screen and (min-width: 768px) {
+    .arcway-pic {
+       
+        display: block;
+    }
+}
+.embed-container {
+
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+}
 .roots-paragraph {
     padding-left: 40px;
     padding-right: 40px;
     font-size: 16px;
+    padding: 17px;
 }
+
+.orange-stripe {
+    font-weight: 700;
+    font-size: 28px;
+    justify-content: center;
+    text-align: center;
+    background-color: #FDB515;
+    padding: 10px;
+    
+}
+
