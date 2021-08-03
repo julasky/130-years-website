@@ -80,7 +80,7 @@ h1, h2 {
 
 }
 
-.arcway-pic {
+.arcway-pic, .homegirl-web {
     width: 100%;
     height: auto;
     display: none;
@@ -91,9 +91,30 @@ h1, h2 {
 }
 
 @media screen and (min-width: 768px) {
-    .arcway-pic {
+    .arcway-pic, .homegirl-web {
        
         display: block;
+    }
+}
+
+.archway-2 {
+    width: 100%;
+    height: auto;
+    display:block;
+    padding-bottom: 20px;
+    
+}
+
+.homegirl {
+    width: 100%;
+    height: auto;
+    display:block;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .archway-2, .homegirl {
+        display: none;
     }
 }
 .embed-container {
@@ -129,6 +150,34 @@ h1, h2 {
     text-align: center;
     background-color: #FDB515;
     padding: 10px;
+    
+}
+
+.homepage-thing {
+    align-self: end;
+
+}
+
+/* .homepage-footer-row {
+    height: 200px;
+} */
+
+.homepage-graphic-bottom {
+    width: 35%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+
+}
+
+.homepage-footer {
+    height: auto;
+    width: 100%;
+    background-color: #003262;
+}
+
+.zmdi-facebook-box {
+    color: white;
     
 }
 
