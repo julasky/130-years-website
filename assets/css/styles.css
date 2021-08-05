@@ -155,17 +155,26 @@ header {
 .computer-one-desktop {
     width: 75%;
     height: auto;
-    padding-left: 40px;
+    /* padding-left: 40px; */
     display: none;
     
 }
 
+.computer-two-desktop {
+    width: 100%;
+    height: auto;
+    display: none;
+    padding-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
-    .computer-one-desktop {
+    .computer-one-desktop, .computer-two-desktop {
         display: block;
        
     }
 }
+
+
 
 .embed-container {
 
@@ -225,18 +234,14 @@ header {
      
 }
 
-@media screen and (min-width: 768px) {
-    .twenty-twenty-one-text-one  {
-        padding-right: 30px;
-    }
-}
+
 
 
 .web-twenty-twenty-one-paragraph-two {
     font-size: 16px;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-bottom: 70px;
+    /* padding-left: 70px; */
+    /* padding-right: 70px;
+    padding-bottom: 70px; */
     display: none;
 }
 
@@ -247,10 +252,17 @@ header {
     }
 }
 
-.down-arrow-twenty-twenty-one {
+.down-arrow-twenty-twenty-one, .down-arrow-home {
     background: transparent;
     border: none;
     padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .down-arrow-twenty-twenty-one, .down-arrow-home {
+        display: none;
+
+    }
 }
 
 
@@ -259,10 +271,47 @@ header {
     font-size: 28px;
     justify-content: center;
     text-align: center;
+    width: auto;
     background-color: #FDB515;
     padding: 10px;
     
 }
+
+
+/* .timeline-graphic-one {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    
+}  */
+
+.timeline-gray-orange-banner-first {
+    height: 100px;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 29px;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    /* display: block; */
+    background-color: #EEEEEE;
+}
+
+
+
+.timeline-orange-header-first {
+    height: 60px;
+    font-weight:700;
+    font-size: 23px;
+    padding: 13px;
+    justify-content: center;
+    text-align: center;
+    background-color: #FDB515;
+
+}
+
+
 
 /* .homepage-thing {
     align-self: end;
@@ -289,12 +338,16 @@ header {
 
 .twenty-twenty-one-section-bottom {
     height: 55px;
+    width: auto;
+    display: block;
     background-color: #3B7EA1;
     /* margin-top: 10px; */
 }
 
 .twenty-twenty-one-footer {
     height: 35px;
+    width: auto;
+    display: block;
     background-color: #003262;
 }
 
