@@ -34,15 +34,18 @@
 <body>
   <header>
     <div class="container">
-      <div class="row">
-        <nav class="col-10">
+      <div class="row justify-content-between  align-items-center navbar-desktop">
+        <nav class="col-7">
 
           <img class="test-nav" src="assets/images/white-logo.png" />
 
         </nav>
 
 
-        <nav class="col-1 justify-content-end">
+        <div class="col-xs-2">
+          <a class="home" href="./index.html">Home</a>
+        </div>
+        <nav class="col-2 col-md-3 justify-content-end">
           <a id="simple-menu" href="#sidr"><i class="zmdi zmdi-menu"></i></a>
           <div id="sidr">
 
@@ -65,10 +68,33 @@
               <li><a href="./2021.html">2021</a></li>
             </ul>
           </div>
+
+          <nav class="main-menu">
+            <div class="dropdown">
+              <button id="menuToggle" class="dropbtn">Timeline
+                <i class="zmdi zmdi-chevron-down"></i>
+              </button>
+              <nav id="dropdown-content" class="myDropdow">
+                <ul class="nav-list">
+                  <li class="item-1"><a href="./1891-1910.html">1891-1910</a></li>
+                  <li class="item-1"> <a href="./1911-1930.html">1911-1930</a></li>
+                  <li class="item-1"> <a href="./1931-1950.html">1931-1950</a></li>
+                  <li class="item-1"> <a href="./1951-1970.html">1951-1970</a></li>
+                  <li class="item-1"> <a href="./1971-1990.html">1971-1990</a></li>
+                  <li class="item-1"> <a href="./1991-2010.html">1991-2010</a></li>
+                  <li class="item-1"> <a href="./2011-2020.html">2011-2020</a></li>
+                  <li class="item-1 last-link"> <a href="./2021.html">2021</a></li>
+
+                </ul>
+
+              </nav>
+          </nav>
+
         </nav>
 
-      </div>
 
+
+      </div>
 
 
     </div>
@@ -87,7 +113,22 @@
     1891 - 1900
 
   </section>
-  <div class="container">
+  <section class="timeline-header-desktop orange">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-7">
+          Timeline
+
+        </div>
+        <div class="col-5">
+          1891-1910
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <div class="container ">
     <dv class="row justify-content-center">
       <div class="col-xs-5 timeline-page-one-paragraph-one">
 
@@ -109,28 +150,59 @@
 
 
   </div>
-  <div class="container timeine-images">
-    <div class="col-12">
-      <div class="row justify-content-center images-timeline">
-        <div>
-          <img class="timeline-image" src="./assets/images/1891-1910-image-1.png" />
-          <p class="timeline-text">Women students with bicycle on path leading from west entrance to campus buildings, with portion of track bleachers in right background, late 1890s.</p>
-        </div>
-        <div>
-          <img class="timeline-image" src="./assets/images/1891-1910-image-2.png" />
-          <p class="timeline-text">A woman student waiting for a train on Shattuck Avenue. The train station stood where buildings stand on "Shattuck Square" today, near the Berkeley BART (rapid transit) station. The trains brought commuters, including many students, to and from the Oakland waterfront where they could catch ferries to San Francisco.</p>
-        </div>
-        <div>
-          <img class="timeline-image" src="./assets/images/1891-1910-image-3.png" />
-          <p class="timeline-text">Labor Day, Feb. 29, 1896. Students on campus. Gift of Jean Hall Kalff and Kendall Hall.</p>
-        </div>
-        <div>
-          <img class="timeline-image" src="./assets/images/1891-1910-image-4.png" />
-          <p class="timeline-text">Skull and Keys Initiation in front of North Hall, November 8, 1899.</p>
+  <div class="container">
+    <div class="row no-gutters background-orange">
+      <div class="col-12 col-md-6">
+        <div class="justify-content-center images-timeline  ">
+          <div>
+            <img class="timeline-image " src="./assets/images/1891-1910-image-1.png" />
+            <p class="timeline-text">Women students with bicycle on path leading from west entrance to campus buildings,
+              with portion of track bleachers in right background, late 1890s.</p>
+          </div>
+          <div>
+            <img class="timeline-image" src="./assets/images/1891-1910-image-2.png" />
+            <p class="timeline-text ">A woman student waiting for a train on Shattuck Avenue. The train station stood
+              where buildings stand on "Shattuck Square" today, near the Berkeley BART (rapid transit) station. The
+              trains brought commuters, including many students, to and from the Oakland waterfront where they could
+              catch ferries to San Francisco.</p>
+          </div>
+          <div>
+            <img class="timeline-image" src="./assets/images/1891-1910-image-3.png" />
+            <p class="timeline-text">Labor Day, Feb. 29, 1896. Students on campus. Gift of Jean Hall Kalff and Kendall
+              Hall.</p>
+          </div>
+          <div>
+            <img class="timeline-image" src="./assets/images/1891-1910-image-4.png" />
+            <p class="timeline-text">Skull and Keys Initiation in front of North Hall, November 8, 1899.</p>
+          </div>
+
+
+
         </div>
 
       </div>
+      <div class="col-md-6 timeline-background">
+        <h2 class="timeline-h1 orange-h1">
+          1891 - 1900
+        </h2>
+        <p class="timeline-paragraph-desktop">Following years of calls from the public to open access to Berkeley’s excellent courses and programs, University Extension came to life in 1891 when three professors crossed the Bay by ferry to offer courses in...</p>
+      </div>
+      
+
     </div>
+
+    <div class="row justify-content-center no-gutters">
+      <div class="col-12"></div>
+        <img class="desktop-timline-long" src="./assets/images/desktop-1891-1910-long.jpg" />
+      </div>
+      <div class="col-12">
+        <p class="timeline-web-text-left">Bird's-eye view of Berkeley, California, 1891 by Moore, Edwin S. and artist Berkeley Herald   </p>
+      </div>
+    </div>
+
+    
+
+
 
   </div>
 
@@ -140,7 +212,7 @@
   </section>
 
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center ">
       <div class="colxs-5 timeline-page-one-paragraph-one">
         <p>
           In 1902, the Board of Regents made University Extension an autonomous department under the
@@ -151,94 +223,129 @@
         </p>
       </div>
     </div>
-  </div>
-  <div class="row justify-content-center">
-    <div class="col-xs-12">
-      <button type="button" class="toggle-button down-arrow-timeline"><i
-          class="zmdi zmdi-chevron-down zmdi-hc-2x"></i></button>
-    </div>
-  </div>
 
-  <div class="container timeine-images">
-    <div class="col-12">
-      <div class="row justify-content-center images-timeline">
-        <div>
-          <img class="timeline-image" src="./assets/images/1901-1910-image-1.png" />
-          <p class="timeline-text">Women students at east entrance of California Hall, with North Hall in background, c 1906</p>
-        </div>
-        <div>
-          <img class="timeline-image" src="./assets/images/1901-1910-image-2.png" />
-          <p class="timeline-text">Part of timeline.</p>
-          
-        </div>
-       
-
+    <div class="row justify-content-center">
+      <div class="col-xs-12">
+        <button type="button" class="toggle-button down-arrow-timeline"><i
+            class="zmdi zmdi-chevron-down zmdi-hc-2x"></i></button>
       </div>
     </div>
 
-  </div>
+
+    <div class="container timeine-images ">
+      <div class="row no-gutters background-orange">
+        <div class="col-12 col-md-6">
+          <div class="justify-content-center images-timeline">
+            <div>
+              <img class="timeline-image" src="./assets/images/1901-1910-image-1.png" />
+              <p class="timeline-text">Women students at east entrance of California Hall, with North Hall in background,
+              c 1906</p>
+            </div>
+            <div>
+              <img class="timeline-image" src="./assets/images/1901-1910-image-2.png" />
+              <p class="timeline-text">Part of timeline.</p>
+
+            </div>
+          </div>
+          
+
+
+        </div>
+        <div class="col-md-6 timeline-background">
+          <h2 class="timeline-h1 orange-h1">
+            1901 - 1910
+          </h2>
+          <p class="timeline-paragraph-desktop">In 1902, the Board of Regents made University Extension an autonomous department under the leadership of the former Cornell history professor Henry Morse Stephens. Stephens was a fervent supporter of the original ideology of university extension’s:</p>
+        </div>
+
+        
+      </div>
+
+      <div class="row justify-content-center no-gutters ">
+        <div class="col-12">
+          <img class="desktop-timline-long" src="./assets/images/desktop-1891-1910-long-2.png" />
+        </div>
+        <div class="col-12">
+          <p class="timeline-web-text-left">Skull and Keys Initiation in front of North Hall, November 8, 1899 </p>
+        </div>
+      </div>
+
+    </div>
 
 
 
 
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+      </script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+
+
+
+
+
+    <script>
+
+
+
+
+      $(document).ready(function () {
+        $('#simple-menu').sidr({
+          side: 'right',
+        });
+
+        $('#closeMenu').on('click', function () {
+          $.sidr('close', 'sidr');
+
+        });
+
+        $('#subMenuToggle').on('click', function () {
+          var subMenu = $('#sub-menu');
+          if (subMenu.hasClass('active')) {
+            subMenu.slideUp().removeClass('active');
+          } else {
+            subMenu.slideDown().addClass('active');
+          }
+        })
+      });
+
+      $(document).ready(function () {
+        $('.images-timeline').slick({
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: 'linear'
+
+
+        });
+      });
+
+      $(document).ready(function () {
+        $('#menuToggle').on('click', function () {
+          console.log('working');
+          var mainNav = $('#dropdown-content');
+
+          if (mainNav.hasClass('myDropdow')) {
+            mainNav.slideUp().removeClass('myDropdow');
+          } else {
+            mainNav.slideDown().addClass('myDropdow');
+          }
+        });
+      });
+
+
+
+
+
+
     </script>
-
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-  <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
-
-
-
-
-
-  <script>
-
-
-
-
-    $(document).ready(function () {
-      $('#simple-menu').sidr({
-        side: 'right',
-      });
-
-      $('#closeMenu').on('click', function () {
-        $.sidr('close', 'sidr');
-
-      });
-
-      $('#subMenuToggle').on('click', function () {
-        var subMenu = $('#sub-menu');
-        if (subMenu.hasClass('active')) {
-          subMenu.slideUp().removeClass('active');
-        } else {
-          subMenu.slideDown().addClass('active');
-        }
-      })
-    });
-
-    $(document).ready(function () {
-      $('.images-timeline').slick({
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-
-
-      });
-    });
-
-
-
-
-
-
-  </script>
 </body>
 
 </html>
