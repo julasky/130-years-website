@@ -340,6 +340,12 @@ a:hover {
  
 }
 
+.timeline-h1.lightblue-h1 {
+
+    color: #3B7EA1;
+ 
+}
+
 
 
 .timeline-text {
@@ -633,6 +639,20 @@ a:hover {
     .darkblue {
 
         background-color: #003262;
+
+
+    }
+}
+
+.lightblue {
+    background-color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+    .lightblue {
+
+        background-color: #3B7EA1;
+       
 
 
     }
