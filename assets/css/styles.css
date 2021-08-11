@@ -321,19 +321,48 @@ a:hover {
 
 }
 
+.timeline-h1.gray-h1 {
+
+    color: #888888;
+ 
+ }
+
+
+.timeline-h1.black-h1 {
+
+    color: #000000;
+ 
+}
+
+.timeline-h1.darkblue-h1 {
+
+    color: #003262
+ 
+}
+
+
+
 .timeline-text {
     font-size: 14px;
     
    
-   
 }
+
 .timeline-text.white {
     font-size: 14px;
-    color:#EEEEEE;
-    
-   
+    color: #000000;
+
    
 }
+
+@media screen and (min-width: 768px) {
+    .timeline-text.white {
+        color:#EEEEEE;
+        
+
+    }
+}
+
 
 .timeline-web-text-left {
     font-size: 15px;
@@ -353,7 +382,22 @@ a:hover {
 
 
 
+/* .timeline-text-white {
+    font-size: 14px;
+    color:#EEEEEE;
+    display: none;
+    
+   
+   
+}
 
+@media screen and (min-width: 768px) {
+    .timeline-text-white{
+        display: block;
+        
+
+    }
+} */
 
 /* @media screen and (min-width: 768px) {
     .twenty-twenty-one-text-one {
@@ -408,6 +452,11 @@ a:hover {
     
 }
 
+.space-2011-page {
+    height: 100px;
+    width: 100%;
+}
+
 
 .timeline-graphic-one {
     width: 94px;
@@ -420,6 +469,26 @@ a:hover {
     
 } 
 
+.large-design {
+    height: auto;
+    display: block;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    top: 792px;
+    opacity: 40%;
+   
+   
+}
+
+@media screen and (min-width: 768px) {
+    .large-design {
+        display: none;
+
+    }
+}
+
+
 .timeline-banner {
     padding: 30px;
     text-align: center;
@@ -431,13 +500,37 @@ a:hover {
    
 }
 
+
+.timeline-banner.gray {
+    
+    color: #888888;
+     
+   
+}
+
+.timeline-banner.black {
+    
+    color: #000000;
+     
+   
+}
+
+.timeline-banner.darkblue {
+    color:#003262;
+}
+
+.timeline-banner.blue {
+    color:#3B7EA1;
+}
+
+
+
 @media screen and (min-width: 768px) {
     .timeline-banner {
         display: none;
 
     }
 }
-
 
 
 
@@ -478,6 +571,7 @@ a:hover {
     
 }
 
+
 @media screen and (min-width: 768px) {
     .background-orange, .brown {
         background-color:#FDB515;
@@ -490,6 +584,7 @@ a:hover {
      
     
 }
+ 
 
 @media screen and (min-width: 768px) {
     .brown {
@@ -499,6 +594,49 @@ a:hover {
 }
 
 
+.gray {
+
+    background-color: #FFFFFF;
+
+
+    
+}
+
+@media screen and (min-width: 768px) {
+    .gray {
+
+        background-color: #888888;
+
+
+    }
+}
+
+.black {
+    background-color: #FFFFFF;
+
+}
+
+@media screen and (min-width: 768px) {
+    .black {
+
+        background-color: #000000;
+
+
+    }
+}
+
+.darkblue {
+    background-color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+    .darkblue {
+
+        background-color: #003262;
+
+
+    }
+}
 
 /* .no-gutters {
     margin-right: 0;
@@ -565,6 +703,40 @@ a:hover {
     padding: 13px;
     
 }
+.timeline-header-desktop.gray {
+    font-weight:700;
+    font-size: 23px;
+    background-color: #888888;
+    padding: 13px;
+    
+}
+
+.timeline-header-desktop.black{
+    font-weight:700;
+    font-size: 23px;
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: 13px;
+    
+}
+
+.timeline-header-desktop.darkblue{
+    font-weight:700;
+    font-size: 23px;
+    color: #FFFFFF;
+    background-color: #003262;
+    padding: 13px;
+    
+}
+
+.timeline-header-desktop.blue{
+    font-weight:700;
+    font-size: 23px;
+    color: #FFFFFF;
+    background-color: #3B7EA1;
+    padding: 13px;
+    
+}
 
 
 .timeline-header.brown {
@@ -586,7 +758,7 @@ a:hover {
     justify-content: center;
     text-align: center;
     color:#FFFFFF;
-    background-color: #C4820E;
+    background-color: #888888;
 
 }
 

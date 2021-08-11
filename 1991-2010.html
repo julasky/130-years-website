@@ -1,97 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>template code</title>
-        
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap-grid.min.css"
-      integrity="sha512-cKoGpmS4czjv58PNt1YTHxg0wUDlctZyp9KUxQpdbAft+XqnyKvDvcGX0QYCgCohQenOuyGSl8l1f7/+axAqyg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>template code</title>
 
-      <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.light.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap-grid.min.css"
+    integrity="sha512-cKoGpmS4czjv58PNt1YTHxg0wUDlctZyp9KUxQpdbAft+XqnyKvDvcGX0QYCgCohQenOuyGSl8l1f7/+axAqyg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.light.min.css">
 
-      <link rel= "stylesheet" href="assets/css/styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
-    </head>
-    <body>
-        <header>
-            <div class="container">
-              <div class="row">
-                <nav class="col-10">
-                  
-                  <img class="test-nav" src="assets/images/white-logo.png" />
-                  
-                </nav>
-  
-               
-                <nav class="col-1 justify-content-end">
-                      <a id="simple-menu" href="#sidr"><i class="zmdi zmdi-menu"></i></a>
-                      <div id="sidr">
-                         
-                          <ul>
-                            <li id="closeMenu"></li>
-                            <li><a href="./index.html">Home</a></li>
-                            <li id="subMenuToggle" >Timeline <i class="zmdi zmdi-chevron-down"></i></li>
-                            <nav class="active">
-                                <ul id="sub-menu">
-                                  <li><a href="./1891-1910.html">1891 - 1910</a> </li>
-                                  <li><a href="./1911-1930.html">1911 - 1930</a> </li>
-                                  <li><a href="./1931-1950.html">1931 - 1950</a> </li>
-                                  <li><a href="./1951-1970.html">1951 - 1970</a> </li>
-                                  <li><a href="./1971-1990.html">1971 - 1990</a> </li>
-                                  <li><a href="./1991-2010.html">1991 - 2010</a> </li>
-                                  <li><a href="./2011-2020.html">2011 - 2020</a> </li>
-                                  </ul>
-                              </nav>
-                            
-                            <li><a href="./2021.html">2021</a></li>
-                          </ul>
-                        </div>
-                  </nav>
-  
-              </div>
-              
-              
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+
+
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row justify-content-between  align-items-center navbar-desktop">
+        <nav class="col-7">
+
+          <img class="test-nav" src="assets/images/white-logo.png" />
+
+        </nav>
+
+
+        <div class="col-xs-2">
+          <a class="home" href="./index.html">Home</a>
+        </div>
+        <nav class="col-2 col-md-3 justify-content-end">
+          <a id="simple-menu" href="#sidr"><i class="zmdi zmdi-menu"></i></a>
+          <div id="sidr">
+
+            <ul>
+              <li id="closeMenu"></li>
+              <li><a href="./index.html">Home</a></li>
+              <li id="subMenuToggle">Timeline <i class="zmdi zmdi-chevron-down"></i></li>
+              <nav class="active">
+                <ul id="sub-menu">
+                  <li><a href="./1891-1910.html">1891 - 1910</a> </li>
+                  <li><a href="./1911-1930.html">1911 - 1930</a> </li>
+                  <li><a href="./1931-1950.html">1931 - 1950</a> </li>
+                  <li><a href="./1951-1970.html">1951 - 1970</a> </li>
+                  <li><a href="./1971-1990.html">1971 - 1990</a> </li>
+                  <li><a href="./1991-2010.html">1991 - 2010</a> </li>
+                  <li><a href="./2011-2020.html">2011 - 2020</a> </li>
+                </ul>
+              </nav>
+
+              <li><a href="./2021.html">2021</a></li>
+            </ul>
+          </div>
+
+          <nav class="main-menu">
+            <div class="dropdown">
+              <button id="menuToggle" class="dropbtn">Timeline
+                <i class="zmdi zmdi-chevron-down"></i>
+              </button>
+              <nav id="dropdown-content" class="active">
+                <ul class="nav-list">
+                  <li class="item-1"><a href="./1891-1910.html">1891-1910</a></li>
+                  <li class="item-1"> <a href="./1911-1930.html">1911-1930</a></li>
+                  <li class="item-1"> <a href="./1931-1950.html">1931-1950</a></li>
+                  <li class="item-1"> <a href="./1951-1970.html">1951-1970</a></li>
+                  <li class="item-1"> <a href="./1971-1990.html">1971-1990</a></li>
+                  <li class="item-1"> <a href="./1991-2010.html">1991-2010</a></li>
+                  <li class="item-1"> <a href="./2011-2020.html">2011-2020</a></li>
+                  <li class="item-1 last-link"> <a href="./2021.html">2021</a></li>
+
+                </ul>
+
+              </nav>
+          </nav>
+
+        </nav>
+
+
+
+      </div>
+
+
+    </div>
+  </header>
+
+
+
+
+
+
+  <section class="timeline-banner">
+    1991-2010
+    <img class="timeline-graphic-one" src="assets/images/white-pattern-two.png" />
+  </section>
+  <section class="timeline-header orange">
+    1991 - 2000
+
+  </section>
+  <section class="timeline-header-desktop orange">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-7">
+          Timeline
+
+        </div>
+        <div class="col-5">
+          1991-2010
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <div class="container ">
+    <dv class="row justify-content-center">
+      <div class="col-xs-5 timeline-page-one-paragraph-one">
+
+        <p>
+          Following the "globalization" trend of the world’s economies and the proliferation of the internet in the 1990s, Extension pioneered online learning after receiving a Sloan grant in 1994 to build an interactive, fully online continuing education curriculum easily accessible nationwide via a commercial carrier
+        </p>
+
+      </div>
+    </dv>
+
+    <div class="row justify-content-center">
+      <div class="col-xs-12">
+        <button type="button" class="toggle-button down-arrow-timeline"><i
+            class="zmdi zmdi-chevron-down zmdi-hc-2x"></i></button>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="container">
+    <div class="row no-gutters background-orange">
+      <div class="col-12 col-md-6">
+        <div class="justify-content-center images-timeline  ">
+          <div>
+            <img class="timeline-image " src="./assets/images/1991-2000-image-1.png" />
+            <p class="timeline-text">Student Services Staff serves as liaison between students and instructors and processes student assignments.. [etc] - Student Services Staff article </p>
+          </div>
+          <div>
+            <img class="timeline-image" src="./assets/images/1991-2000-image-2.png" />
+            <p class="timeline-text ">"I love teaching adults because they're highly  motivated and I know they'll apply what we've discussed at their jobs the next day." - Marcia Canton </p>
+          </div>
+          <div>
+            <img class="timeline-image" src="./assets/images/1991-2000-image-3.png" />
+            <p class="timeline-text">Barrows Hall, which houses the School of Business Administration on the Berkley campus, is the site of many extension classes in business </p>
+          </div>
+          <div>
+            <img class="timeline-image" src="./assets/images/1991-2000-image-4.png" />
+            <p class="timeline-text">Students' participation is an important ingredient in "Organization and Management I,"</p>
+          </div>
+
+
+
+        </div>
+
+      </div>
+      <div class="col-md-6 timeline-background">
+        <h2 class="timeline-h1 orange-h1">
+          1991 - 2000
+        </h2>
+        <p class="timeline-paragraph-desktop">Following the "globalization" trend of the world’s economies and the proliferation of the internet in the 1990s, Extension pioneered online learning after receiving a Sloan grant in 1994 to build an interactive, fully online continuing education curriculum easily accessible nationwide via a commercial carrier</p>
+      </div>
+      
+
+    </div>
+
+    <div class="row justify-content-center no-gutters">
+      <div class="col-12"></div>
+        <img class="desktop-timline-long" src="./assets/images/desktop-1991-2010-long-1.jpg" />
+      </div>
+      <div class="col-12">
+        <p class="timeline-web-text-left">Fall 1997 Catalog   </p>
+      </div>
+    </div>
+
+    
+
+
+
+  </div>
+
+  <section class="timeline-header orange">
+    2000-2010
+
+  </section>
+
+  <div class="container">
+    <div class="row justify-content-center ">
+      <div class="colxs-5 timeline-page-one-paragraph-one">
+        <p>
+          Mirroring the economic downturn in the wake of the dot-com bubble that impacted in particular the technology industries of the Bay Area, Extension experienced declines in enrollments, particularly in its high technology programs. The decline became sharper with the deepening recession after Sept. 11 2001, which had a particularly adverse impact on international enrollments
+        </p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-xs-12">
+        <button type="button" class="toggle-button down-arrow-timeline"><i
+            class="zmdi zmdi-chevron-down zmdi-hc-2x"></i></button>
+      </div>
+    </div>
+
+
+    <div class="container timeine-images ">
+      <div class="row no-gutters background-orange">
+        <div class="col-12 col-md-6">
+          <div class="justify-content-center images-timeline">
+            <div>
+              <img class="timeline-image" src="./assets/images/2000-2010-image-1.png" />
+              <p class="timeline-text">2009 UC Berkeley Extension Catalog</p>
             </div>
-          </header>
-       
-       
+            <div>
+              <img class="timeline-image" src="./assets/images/2000-2010-image-2.png" />
+              <p class="timeline-text">2002 Catalog</p>
+
+            </div>
+            <div>
+              <img class="timeline-image" src="./assets/images/2000-2010-image-3.png" />
+              <p class="timeline-text">UC Berkeley Extension sept-dec 2008</p>
+
+            </div>
+          </div>
+          
+
+
+        </div>
+        <div class="col-md-6 timeline-background">
+          <h2 class="timeline-h1 orange-h1">
+            2000 - 2010
+          </h2>
+          <p class="timeline-paragraph-desktop">Mirroring the economic downturn in the wake of the dot-com bubble that impacted in particular the technology industries of the Bay Area, Extension experienced declines in enrollments, particularly in its high technology programs. The decline became sharper with the deepening recession after Sept. 11 2001, which had a particularly adverse impact on international enrollments</p>
+        </div>
+
         
-          <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    
-        <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
-        <script>
-          $(document).ready(function() {
-            $('#simple-menu').sidr({
-              side: 'right',
-            });
-    
-            $('#closeMenu').on('click', function() {
-               $.sidr('close', 'sidr');
-               
-            });
-  
-            $('#subMenuToggle').on('click', function() {
-            var subMenu = $('#sub-menu');
-            if (subMenu.hasClass('active')) {
+      </div>
+
+      <div class="row justify-content-center no-gutters ">
+        <div class="col-12">
+          <img class="desktop-timline-long" src="./assets/images/desktop-1991-2010-long-2.jpg" />
+        </div>
+        <div class="col-12">
+          <p class="timeline-web-text-left">Summer 2000 Catalog </p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+      </script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+
+
+
+
+
+    <script>
+
+
+
+
+      $(document).ready(function () {
+        $('#simple-menu').sidr({
+          side: 'right',
+        });
+
+        $('#closeMenu').on('click', function () {
+          $.sidr('close', 'sidr');
+
+        });
+
+        $('#subMenuToggle').on('click', function () {
+          var subMenu = $('#sub-menu');
+          if (subMenu.hasClass('active')) {
             subMenu.slideUp().removeClass('active');
           } else {
             subMenu.slideDown().addClass('active');
           }
         })
-          });
-  
-  
-  
-          
-        </script>  
-    </body>
+      });
+
+      $(document).ready(function () {
+        $('.images-timeline').slick({
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: 'linear'
+
+
+        });
+      });
+
+      $(document).ready(function () {
+        $('#menuToggle').on('click', function () {
+          console.log('working');
+          var mainNav = $('#dropdown-content');
+
+          if (mainNav.hasClass('active')) {
+            mainNav.slideUp().removeClass('active');
+          } else {
+            mainNav.slideDown().addClass('active');
+          }
+        });
+      });
+
+
+
+
+
+
+    </script>
+</body>
+
 </html>
