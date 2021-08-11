@@ -74,7 +74,7 @@
               <button id="menuToggle" class="dropbtn">Timeline
                 <i class="zmdi zmdi-chevron-down"></i>
               </button>
-              <nav id="dropdown-content" class="myDropdow">
+              <nav id="dropdown-content" class="active">
                 <ul class="nav-list">
                   <li class="item-1"><a href="./1891-1910.html">1891-1910</a></li>
                   <li class="item-1"> <a href="./1911-1930.html">1911-1930</a></li>
@@ -332,10 +332,10 @@
           console.log('working');
           var mainNav = $('#dropdown-content');
 
-          if (mainNav.hasClass('myDropdow')) {
-            mainNav.slideUp().removeClass('myDropdow');
+          if (mainNav.hasClass('active')) {
+            mainNav.slideUp().removeClass('active');
           } else {
-            mainNav.slideDown().addClass('myDropdow');
+            mainNav.slideDown().addClass('active');
           }
         });
       });

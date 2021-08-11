@@ -327,6 +327,13 @@ a:hover {
    
    
 }
+.timeline-text.white {
+    font-size: 14px;
+    color:#EEEEEE;
+    
+   
+   
+}
 
 .timeline-web-text-left {
     font-size: 15px;
@@ -431,6 +438,9 @@ a:hover {
     }
 }
 
+
+
+
 /* .timeline-banner.orange {
     background: orange;
     color: black;
@@ -469,8 +479,21 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-    .background-orange {
+    .background-orange, .brown {
         background-color:#FDB515;
+
+    }
+}
+
+.brown {
+    background-color: #FFFFFF;
+     
+    
+}
+
+@media screen and (min-width: 768px) {
+    .brown {
+        background-color:#C4820E;
 
     }
 }
@@ -531,6 +554,14 @@ a:hover {
     font-weight:700;
     font-size: 23px;
     background-color: #FDB515;
+    padding: 13px;
+    
+}
+
+.timeline-header-desktop.brown {
+    font-weight:700;
+    font-size: 23px;
+    background-color: #C4820E;
     padding: 13px;
     
 }
@@ -836,6 +867,15 @@ a:hover {
     font-weight: 700;
     border-bottom: none;
 }
+
+
+.remainder-text {
+    display: none;
+}
+
+button:hover {
+    cursor: pointer;
+  }
 
 
 
