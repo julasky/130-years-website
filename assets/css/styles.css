@@ -269,6 +269,10 @@ a:hover {
     /* padding: 17px; */
 }
 
+.roots-paragraph.readmore {
+    padding-top: 70px;
+   
+}
 .twenty-twenty-one-text-one, .timeline-page-one-paragraph-one {
     font-size: 16px;
     padding-left: 70px;

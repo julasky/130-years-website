@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Homepage</title>
 
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap-grid.min.css"
       integrity="sha512-cKoGpmS4czjv58PNt1YTHxg0wUDlctZyp9KUxQpdbAft+XqnyKvDvcGX0QYCgCohQenOuyGSl8l1f7/+axAqyg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,11 +24,11 @@
         <header>
           <div class="container">
             <div class="row justify-content-between  align-items-center navbar-desktop">
-              <div class="col-7">
+              <nav class="col-7">
                 
                 <img class="test-nav" src="assets/images/white-logo.png" />
                 
-              </div>
+              </nav>
            
 
               <div class="col-xs-2">
@@ -56,12 +58,12 @@
                         </ul>
                       </div>
 
-                      <div class="main-menu">
+                      <nav class="main-menu">
                         <div class="dropdown">
                           <button id="menuToggle" class="dropbtn">Timeline
                             <i class="zmdi zmdi-chevron-down"></i>
                           </button>
-                          <div id="dropdown-content" class="myDropdow">
+                          <nav id="dropdown-content" class="active">
                             <ul class="nav-list">
                               <li class="item-1"><a href="./1891-1910.html">1891-1910</a></li>
                               <li class="item-1"> <a href="./1911-1930.html">1911-1930</a></li> 
@@ -74,8 +76,8 @@
                           
                             </ul>
                             
-                          </div>
-                        </div>
+                          </nav>
+                        </nav>
                       
                   </nav>
 
@@ -119,10 +121,10 @@
               <img class="arcway-pic" src="assets/images/archway-image.png" />
             </div>
                 
-          </div>
-          <div class="row justify-content-center">
+        </div>
+        <div class="row justify-content-center">
             
-            <div class="col-xs-12">
+            <div class="col-xs-12 ">
                 <button type="button" class="toggle-button down-arrow-home"><i class="zmdi zmdi-chevron-down zmdi-hc-2x"></i></button>
 
             </div>
@@ -150,25 +152,35 @@
         <div class="container">
 
           <div class="row justify-content-between">
-            <div class="col-xs-5 col-md-6 reach-paragraph">
-              <p>
-                The central concept of Extension, as envisioned by it’s first proponents, notably the two UC
-              Presidents, Edward S. Holden and Horace Davis, has always been the accessibility to the courses offered by our instructors. Consequently, Extension courses took place where the learners worked and lived, not on the remote campus in Berkeley. After the immediate success of its first courses, the regents officially adopted an extramural instruction plan that formally established the University Extension on Valentine’s Day, February 14, 1893...
-              </p>
-            </div>
+                <div class="col-xs-5 col-md-6 reach-paragraph readmore">
+                    <p>
+                        The central concept of Extension, as envisioned by it’s first proponents, notably the two UC
+                        Presidents, Edward S. Holden and Horace Davis, has always been the accessibility to the courses offered by our instructors. Consequently, Extension courses took place where the learners worked and lived, not on the remote campus in Berkeley. After the immediate success of its first courses, the regents officially adopted an extramural instruction plan that formally established the University Extension on Valentine’s Day, February 14, 1893...
+                    </p>
+
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Read More ▽</button>
+                    <div id="demo" class="collapse">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+        
+                </div>
             <div class="col-xs-7 col-md-6 " >
               <img class="homegirl-web" src="assets/images/home-girl-web.png" />
             </div>
-          </div>
+        </div>
 
-          <div class="row justify-content-center">
+          
+
+        <div class="row justify-content-center">
             <div class="col-xs-12">
               <button type="button" class="toggle-button down-arrow-home"><i class="zmdi zmdi-chevron-down zmdi-hc-2x"></i></button>
             </div>
-          </div>
+        </div>
 
           
-          <div class="row">
+        <div class="row">
             <div class="col-6 justify-content-between">
               <img class="archway-2" src="assets/images/archway-image.png" />
             </div>
@@ -210,6 +222,10 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   
       <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <script>
 
         
