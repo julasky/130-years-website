@@ -287,6 +287,13 @@ a:hover {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .text-gone {
+        display: none; 
+
+    }
+}
+
 .timeline-paragraph-desktop {
     font-size: 17px;
     padding-left: 40px;
@@ -482,7 +489,7 @@ a:hover {
 .large-design {
     height: auto;
     display: block;
-    margin-left: auto;
+    /* margin-left: auto; */
     position: absolute;
     right: 0;
     top: 792px;
@@ -973,6 +980,8 @@ a:hover {
     }
 }
 
+
+
 .dropdown {
     /* float: left;
     overflow: hidden;
@@ -1071,9 +1080,38 @@ a:hover {
 
 button:hover {
     cursor: pointer;
-  }
+}
+
+button {
+    background: transparent;
+    border: none;
+    
+
+}
 
 
+
+/* @media screen and (min-width: 768px) {
+    button {
+       
+        display: none;
+    }
+} */
+
+.dropdown-pic {
+    width: 100%;
+    height: auto;
+    display: block;
+    right: 0;
+    top: 0;
+    
+}
+
+/* @media screen and (min-width: 768px) {
+    .dropdown-pic  {
+        padding-left: 200px;
+    }
+} */
 
 /* button {
     color:#FFFFFF;

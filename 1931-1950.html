@@ -132,19 +132,21 @@
     <dv class="row justify-content-center">
       <div class="col-xs-5 timeline-page-one-paragraph-one">
 
-        <p>
+        <p class="intro">
           The Great Depression impacted Extension’s ability to maintain its educational offerings, nevertheless, new structural changes allowed for the creation of new resources for professional career development...
         </p>
+        <p class="remainder-text">
+          While other universities across the country spun out their Extensions to become independent colleges with their own standards, faculty and programs, UC held on to its original design of an integrated Extension. As a consequence, control of the Academic Senate grew and to ensure the continuing ability to deliver university credit bearing courses, while providing professional training, Extension offerings were divided into three categories: degree credit, professional upgrading, and noncredit offerings.
+        </p>
+
+        <button class="toggle-button">
+          <i class="zmdi zmdi-chevron-down zmdi-hc-2x"></i>
+      </button>
 
       </div>
     </dv>
 
-    <div class="row justify-content-center">
-      <div class="col-xs-12">
-        <button type="button" class="toggle-button down-arrow-timeline"><i
-            class="zmdi zmdi-chevron-down zmdi-hc-2x"></i></button>
-      </div>
-    </div>
+  
 
 
   </div>
@@ -179,7 +181,18 @@
         <h2 class="timeline-h1 gray-h1">
           1931 - 1940
         </h2>
-        <p class="timeline-paragraph-desktop"> The Great Depression impacted Extension’s ability to maintain its educational offerings, nevertheless, new structural changes allowed for the creation of new resources for professional career development...</p>
+        <div class="timeline-paragraph-desktop">
+          <p class="intro"> The Great Depression impacted Extension’s ability to maintain its educational offerings, nevertheless, new structural changes allowed for the creation of new resources for professional career development...</p>
+        <p class="remainder-text">
+          While other universities across the country spun out their Extensions to become independent colleges with their own standards, faculty and programs, UC held on to its original design of an integrated Extension. As a consequence, control of the Academic Senate grew and to ensure the continuing ability to deliver university credit bearing courses, while providing professional training, Extension offerings were divided into three categories: degree credit, professional upgrading, and noncredit offerings.
+        </p>
+
+        <button class="toggle-button">
+          <i class="zmdi zmdi-chevron-down zmdi-hc-2x"></i>
+      </button>
+
+        </div>
+        
       </div>
       
 
@@ -208,18 +221,19 @@
   <div class="container">
     <div class="row justify-content-center ">
       <div class="colxs-5 timeline-page-one-paragraph-one">
-        <p>
+        <p class="intro">
           During World War II, Extension classes and correspondence courses became an important way for service personnel to continue their education. As part of the war effort, Extension’s Director Professor Baldwin Munger Woods took over the Engineering Science Management Defense Training (ESMDT) Program. By the end of the war, hundreds of thousands of research dollars poured into California...
         </p>
+        <p class="remainder-text">
+          spawn ing new industries and, once again, dramatically increasing the population. UCLA Extension met the critical need for retraining mandated by Southern California's burgeoning aerospace industry, while UC Berkeley Extension expanded its business and engineering courses across the state. Growth also meant an increased demand for teachers. Extension responded by developing an emergency teacher training program that enabled new teachers to satisfy the state's credential requirements. With the new UC Santa Barbara campus, a new Extension began offering classes in 1944. All the while, important new programs were developed and implemented. Continuing Education of the Bar (CEB), for example, was established in 1947 by the Regents of the University and the State Bar of California. Today it is one of the country's largest continuing education programs for lawyers.
+        </p>
+        <button class="toggle-button">
+          <i class="zmdi zmdi-chevron-down zmdi-hc-2x"></i>
+      </button>
       </div>
     </div>
 
-    <div class="row justify-content-center">
-      <div class="col-xs-12">
-        <button type="button" class="toggle-button down-arrow-timeline"><i
-            class="zmdi zmdi-chevron-down zmdi-hc-2x"></i></button>
-      </div>
-    </div>
+    
 
 
     <div class="container timeine-images ">
@@ -249,7 +263,17 @@
           <h2 class="timeline-h1 gray-h1">
             1941 - 1950
           </h2>
-          <p class="timeline-paragraph-desktop">During World War II, Extension classes and correspondence courses became an important way for service personnel to continue their education. As part of the war effort, Extension’s Director Professor Baldwin Munger Woods took over the Engineering Science Management Defense Training (ESMDT) Program. By the end of the war, hundreds of thousands of research dollars poured into California...</p>
+          <div class="timeline-paragraph-desktop">
+            <p class="intro">During World War II, Extension classes and correspondence courses became an important way for service personnel to continue their education. As part of the war effort, Extension’s Director Professor Baldwin Munger Woods took over the Engineering Science Management Defense Training (ESMDT) Program. By the end of the war, hundreds of thousands of research dollars poured into California...</p>
+            <p class="remainder-text">
+              spawn ing new industries and, once again, dramatically increasing the population. UCLA Extension met the critical need for retraining mandated by Southern California's burgeoning aerospace industry, while UC Berkeley Extension expanded its business and engineering courses across the state. Growth also meant an increased demand for teachers. Extension responded by developing an emergency teacher training program that enabled new teachers to satisfy the state's credential requirements. With the new UC Santa Barbara campus, a new Extension began offering classes in 1944. All the while, important new programs were developed and implemented. Continuing Education of the Bar (CEB), for example, was established in 1947 by the Regents of the University and the State Bar of California. Today it is one of the country's largest continuing education programs for lawyers.
+            </p>
+
+            <button class="toggle-button">
+              <i class="zmdi zmdi-chevron-down zmdi-hc-2x"></i>
+          </button>
+          </div>
+          
         </div>
 
         
@@ -333,6 +357,19 @@
           }
         });
       });
+
+
+      $('.toggle-button').on('click', function () {
+            const buttonText = $(this).text().toLowerCase().trim();
+
+            $(this).prev('.remainder-text').slideToggle();
+
+            // $(this).text(buttonText === 'show more' ? 'show less' : 'show more');
+
+           
+            $(this).html(buttonText === '' ? '<span>show less<i class="zmdi zmdi-chevron-up zmdi-hc-2x"></i></span>' : '<span><i class="zmdi zmdi-chevron-down zmdi-hc-2x"></i></span>');
+        });
+
 
 
 

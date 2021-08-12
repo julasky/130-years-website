@@ -132,20 +132,22 @@
     <dv class="row justify-content-center">
       <div class="col-xs-5 timeline-page-one-paragraph-one">
 
-        <p>
-          During the 1970s Extension moved to the forefront of organizations offering programs dealing with major social issues, including hazardous materials, alcohol and drug abuse, transportation planning, water quality and conservation
+        <p class="intro">
+          During the 1970s Extension moved to the forefront of organizations offering programs dealing with major social issues, including hazardous materials, alcohol and drug abuse, transportation planning, water quality and conservation, and biotechnology...
         </p>
+        <p class="remainder-text">
+          In addition to preparing professionals to work in these areas, Extension programs frequently bring together politicians, corporate executives, government agencies, and experts from various fields to explore solutions to these problems.
+
+        </p>
+
+        <button class="toggle-button">
+          <i class="zmdi zmdi-chevron-down zmdi-hc-2x"></i>
+      </button>
 
       </div>
     </dv>
 
-    <div class="row justify-content-center">
-      <div class="col-xs-12">
-        <button type="button" class="toggle-button down-arrow-timeline"><i
-            class="zmdi zmdi-chevron-down zmdi-hc-2x"></i></button>
-      </div>
-    </div>
-
+    
 
   </div>
   <div class="container">
@@ -189,7 +191,18 @@
         <h2 class="timeline-h1 darkblue-h1">
           1971 - 1980
         </h2>
-        <p class="timeline-paragraph-desktop"> During the 1970s Extension moved to the forefront of organizations offering programs dealing with major social issues, including hazardous materials, alcohol and drug abuse, transportation planning, water quality and conservation</p>
+        <div class="timeline-paragraph-desktop">
+          <p class="intro"> During the 1970s Extension moved to the forefront of organizations offering programs dealing with major social issues, including hazardous materials, alcohol and drug abuse, transportation planning, water quality and conservation, and biotechnology...</p>
+          <p class="remainder-text">
+            In addition to preparing professionals to work in these areas, Extension programs frequently bring together politicians, corporate executives, government agencies, and experts from various fields to explore solutions to these problems.
+          </p>
+
+          <button class="toggle-button">
+            <i class="zmdi zmdi-chevron-down zmdi-hc-2x"></i>
+        </button>
+
+        </div>
+        
       </div>
       
 
@@ -218,18 +231,20 @@
   <div class="container">
     <div class="row justify-content-center ">
       <div class="colxs-5 timeline-page-one-paragraph-one">
-        <p>
-          In the 1980s, Extension produced more than 13,000 courses to enroll some 400,000 students every year, making it one of the largest, most diverse continuing education providers in the world
+        <p class="intro">
+          In the 1980s, Extension produced more than 13,000 courses to enroll some 400,000 students every year, making it one of the largest, most diverse continuing education providers in the world...
         </p>
+        <p class="remainder-text">
+          As a consequence, several Extension units begin offering programs throughout Europe and Asia, ranging from study programs exploring other cultures with high-level exchanges of technology and research.
+        </p>
+
+        <button class="toggle-button">
+          <i class="zmdi zmdi-chevron-down zmdi-hc-2x"></i>
+      </button>
       </div>
     </div>
 
-    <div class="row justify-content-center">
-      <div class="col-xs-12">
-        <button type="button" class="toggle-button down-arrow-timeline"><i
-            class="zmdi zmdi-chevron-down zmdi-hc-2x"></i></button>
-      </div>
-    </div>
+    
 
 
     <div class="container timeine-images ">
@@ -264,7 +279,16 @@
           <h2 class="timeline-h1 darkblue-h1">
             1981 - 1990
           </h2>
-          <p class="timeline-paragraph-desktop">In the 1980s, Extension produced more than 13,000 courses to enroll some 400,000 students every year, making it one of the largest, most diverse continuing education providers in the world</p>
+          <div class="timeline-paragraph-desktop">
+            <p class="intro">In the 1980s, Extension produced more than 13,000 courses to enroll some 400,000 students every year, making it one of the largest, most diverse continuing education providers in the world...</p>
+            <p class="remainder-text">
+              As a consequence, several Extension units begin offering programs throughout Europe and Asia, ranging from study programs exploring other cultures with high-level exchanges of technology and research.
+            </p>
+            <button class="toggle-button">
+              <i class="zmdi zmdi-chevron-down zmdi-hc-2x"></i>
+          </button>
+          </div>
+          
         </div>
 
         
@@ -348,6 +372,17 @@
           }
         });
       });
+
+      $('.toggle-button').on('click', function () {
+            const buttonText = $(this).text().toLowerCase().trim();
+
+            $(this).prev('.remainder-text').slideToggle();
+
+            // $(this).text(buttonText === 'show more' ? 'show less' : 'show more');
+
+           
+            $(this).html(buttonText === '' ? '<span>show less<i class="zmdi zmdi-chevron-up zmdi-hc-2x"></i></span>' : '<span><i class="zmdi zmdi-chevron-down zmdi-hc-2x"></i></span>');
+        });
 
 
 
