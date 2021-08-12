@@ -534,13 +534,7 @@ a:hover {
 }
 
 
-.gray {
 
-    background-color: #FFFFFF;
-
-
-    
-}
 
 @media screen and (min-width: 768px) {
     .gray {
@@ -551,10 +545,7 @@ a:hover {
     }
 }
 
-.black {
-    background-color: #FFFFFF;
 
-}
 
 @media screen and (min-width: 768px) {
     .black {
@@ -565,9 +556,7 @@ a:hover {
     }
 }
 
-.darkblue {
-    background-color: #FFFFFF;
-}
+
 
 @media screen and (min-width: 768px) {
     .darkblue {
